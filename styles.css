@@ -9,8 +9,8 @@ body {
     background: #121212;
     scroll-behavior: smooth;
     transition: all 0.3s ease;
+    padding: 0;
 }
-
 /* Header */
 header {
     background: linear-gradient(135deg, #6a1b9a, #d81b60);
@@ -21,7 +21,6 @@ header {
     z-index: 10;
     animation: slide-in-top 1s ease-out;
 }
-
 /* Header Text */
 header h1 {
     margin: 0;
@@ -70,6 +69,8 @@ nav ul li a:hover {
 main {
     padding: 3rem;
     animation: fade-in 2s ease-in-out;
+    background-color: #333;
+    color: #ccc;
 }
 
 /* Section Titles */
@@ -135,7 +136,6 @@ footer {
     padding: 1rem 0;
     background: #1f1f1f;
     color: #ccc;
-    margin-top: 2rem;
 }
 
 footer p {
@@ -214,36 +214,6 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    main {
-        padding: 2rem;
-    }
-
-    .project {
-        padding: 1rem;
-    }
-
-    .project a {
-        font-size: 0.9rem;
-    }
-    header h1 {
-        font-size:22px ;
-    }
-    nav li{
-        font-size:12px ;
-    }
-}
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    background: linear-gradient(180deg, #f5f7fa 0%, #c3cfe2 100%);
-}
-
-
-
 footer {
     text-align: center;
     padding: 20px;
@@ -292,4 +262,112 @@ section {
 #backToTop:hover {
     background: #0056b3;
     transform: scale(1.1);
+}
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    main {
+        padding: 2rem;
+    }
+
+    .project {
+        padding: 1rem;
+    }
+
+    .project a {
+        font-size: 0.9rem;
+    }
+    header h1 {
+        font-size:22px ;
+    }
+    header p {
+        font-size:12px ;
+    }
+    nav li{
+        font-size:12px ;
+    }
+    section h2{
+        font-size:20px ;
+    }
+    main h2::after {
+        width: 20px;
+    }
+    section p{
+        font-size:12px ;
+    }
+    #experience p{
+        font-size:12px ;
+    }
+    #projects p{
+        font-size:12px ;
+    }
+    #contact ul{
+        font-size:12px ;
+    }
+    h3{
+        font-size:18px ;
+    }
+    footer p{
+        font-size:12px ;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width:601px) and (max-width:768px){
+    main {
+        padding: 2rem;
+    }
+    .project {
+        padding: 1rem;
+    }
+    .project a {
+        font-size: 0.9rem;
+    }
+    header h1 {
+        font-size:30px ;
+    }
+    header p {
+        font-size:16px ;
+    }
+    nav li{
+        font-size:14px ;
+    }
+    section h2{
+        font-size:26px ;
+    }
+    main h2::after {
+        width: 20px;
+    }
+    section p{
+        font-size:15px ;
+    }
+    #experience p{
+        font-size:15px ;
+    }
+    #projects p{
+        font-size:15px ;
+    }
+    #contact ul{
+        font-size:15px ;
+    }
+    h3{
+        font-size:22px ;
+    }
+    footer p{
+        font-size:16px ;
+    }
+
 }
